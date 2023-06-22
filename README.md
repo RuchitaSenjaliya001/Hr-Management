@@ -1,38 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+DASHBOARD
 
-## Getting Started
+![image](https://github.com/RuchitaSenjaliya001/Hr-Management/assets/127396165/c00aad24-759a-47ed-8ce3-dc8047e7e1a9)
 
-First, run the development server:
+CALENDER
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+![image](https://github.com/RuchitaSenjaliya001/Hr-Management/assets/127396165/81d36734-3af2-45a0-955b-a2a2f2380b8c)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+EMPLOYEE LIST
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+![image](https://github.com/RuchitaSenjaliya001/Hr-Management/assets/127396165/d49f07e8-24a9-4675-8bc8-e1c6b06ddc9e)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+EMPLOYEE TABLE
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+![image](https://github.com/RuchitaSenjaliya001/Hr-Management/assets/127396165/d3a3b00c-b593-433a-8008-358b41c37a3c)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+EMPLOYEE DETAIL
 
-## Learn More
+![image](https://github.com/RuchitaSenjaliya001/Hr-Management/assets/127396165/3ac40b7f-0d80-4411-b3bb-195bf29b9e29)
 
-To learn more about Next.js, take a look at the following resources:
+REPORT 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![image](https://github.com/RuchitaSenjaliya001/Hr-Management/assets/127396165/46db9e14-4cb5-4e1f-9e09-11137738eb5f)
