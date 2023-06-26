@@ -142,9 +142,9 @@ const dataPie = [
     }
 ]
 
-export default function PieChart() {
+export default function PieChart({ mode }) {
     return (
-        <div className="h-[45vh] max-w-5xl m-auto bg-[#1F2A40] text-white rounded-lg pb-5">
+        <div className={`h-[45vh] max-w-5xl m-auto ${mode === 'dark' ? 'bg-[#1F2A40] text-white' : 'bg-[#E6EFFF] text-black'} rounded-lg pb-5`}>
             <h1 className='px-5 text-xl font-semibold pt-1'>Languages</h1>
             {/* <ResponsivePie
                 data={dataPie}

@@ -72,9 +72,9 @@ const data = [
 ]
 
 
-export default function RadialBar() {
+export default function RadialBar({ mode }) {
     return (
-        <div className="h-[45vh] max-w-5xl m-auto bg-[#1F2A40] rounded-lg">
+        <div className={`h-[45vh] max-w-5xl m-auto ${mode === 'dark' ? 'bg-[#1F2A40] text-white' : 'bg-[#E6EFFF] text-black'} rounded-lg`}>
             <ResponsiveRadialBar
                 data={data}
                 valueFormat=">-.2f"

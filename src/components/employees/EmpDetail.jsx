@@ -1,43 +1,54 @@
 import Image from "next/image";
 import React from "react";
 import { ResponsiveCalendar } from "@nivo/calendar";
-import calendarData from "../Dummy_data/EMP_DAILY_WORK_DATA.json"
+import calendarData from "../Dummy_data/EMP_DAILY_WORK_DATA.json";
 import { useRouter } from "next/router";
 
 export default function EmpDetail({
-    name,
-    jobTitle,
+    emp_name: name,
+    job_title: jobTitle,
     status,
     department,
-    hireDate,
+    joining_date: hireDate,
     email,
     mobile,
     id,
+    avatar,
+    mode,
 }) {
-    const router = useRouter()
+    const router = useRouter();
     const goBackHandler = () => {
-        router.push('/employee')
-    }
+        router.push("/employee");
+    };
+
     return (
         <>
-
             <div className="w-[60%] m-auto">
                 <div className="text-center my-3 ">
                     <div className="flex justify-between">
-                        <button onClick={goBackHandler} className="text-white font-bold bg-yellow-400 py-2 px-5 rounded-lg ">Go Back</button>
                         <button
-                            className="px-5 rounded-md border font-bold cursor-default 
-                            bg-green-100  text-green-600  border-green-400
-                            "
+                            onClick={goBackHandler}
+                            className="text-white font-bold bg-yellow-400 py-2 px-5 rounded-lg "
                         >
-                            Active
+                            Go Back
                         </button>
-
+                        <button
+                            className={`px-4 rounded-md border font-bold cursor-default ${status === "active" &&
+                                "bg-green-100  text-green-600  border-green-400"
+                                } ${status === "inactive" &&
+                                "bg-red-100  text-red-600  border-red-400"
+                                } ${status === "unverified" &&
+                                "bg-yellow-100  text-yellow-600  border-yellow-400"
+                                }`}
+                        >
+                            {status}
+                        </button>
                     </div>
                     <div className="flex justify-center">
                         <Image
                             className="p-1 rounded-full ring-2 ring-gray-300 "
-                            src="https://img.freepik.com/premium-vector/people-saving-money_24908-51569.jpg?w=740"
+                            // src="https://img.freepik.com/premium-vector/people-saving-money_24908-51569.jpg?w=740"
+                            src={avatar}
                             alt="Bordered avatar"
                             width={150}
                             height={150}
@@ -45,23 +56,31 @@ export default function EmpDetail({
                     </div>
                 </div>
                 <div className="w-full py-2 pb-4">
-                    <h1 className="text-center text-3xl font-bold text-[#fff]">
-                        Ruchita Senjaliya
+                    <h1
+                        className={`text-center text-3xl font-bold ${mode === "dark" ? "text-[#FFF]" : "text-[#111827]"
+                            } `}
+                    >
+                        {name}
                     </h1>
                     <p className="text-center text-lg font-semibold text-[#aeaeae]">
-                        Front-end Developer
+                        {jobTitle}
                     </p>
                 </div>
-                <div className="bg-[#111827] w-[60%] m-auto rounded-md">
+                <div
+                    className={`${mode === "dark" ? "bg-[#1F2A40]" : "bg-[#E6EFFF]"
+                        } w-[60%] m-auto rounded-md`}
+                >
                     <div className="flex justify-between space-x-8 px-4 py-4">
                         <div className="">
                             <p className="text-md text-[#8a96aa] font-bold">Department</p>
-                            <p className="text-xl text-[#fcfcfc] font-semibold">React JS</p>
+                            <p className={`text-xl ${mode === 'dark' ? 'text-[#FCFCFC]' : 'text-[#141B2D]'} font-semibold`}>
+                                {department}
+                            </p>
                         </div>
                         <div className="">
                             <p className="text-md text-[#8a96aa] font-bold">Date Hired</p>
-                            <p className="text-xl text-[#fcfcfc] font-semibold  ">
-                                23 Jan, 2023
+                            <p className={`text-xl ${mode === 'dark' ? 'text-[#FCFCFC]' : 'text-[#141B2D]'} font-semibold`}>
+                                {hireDate}
                             </p>
                         </div>
                     </div>
@@ -69,18 +88,18 @@ export default function EmpDetail({
                     <div className="flex justify-between space-x-8 px-4 py-4">
                         <div className="">
                             <p className="text-md text-[#8a96aa] font-bold">Email</p>
-                            <p className="text-lg font-semibold text-[#fcfcfc]">
-                                ruchita.s@solutelabs.com
-                            </p>
+                            <p className={`text-xl ${mode === 'dark' ? 'text-[#FCFCFC]' : 'text-[#141B2D]'} font-semibold`}>{email}</p>
                         </div>
                         <div className="">
                             <p className="text-md text-[#8a96aa] font-bold">Mobile number</p>
-                            <p className="text-lg font-semibold text-[#fcfcfc]">9874563210</p>
+                            <p className={`text-xl ${mode === 'dark' ? 'text-[#FCFCFC]' : 'text-[#141B2D]'} font-semibold`}>{mobile}</p>
                         </div>
                     </div>
-
                 </div>
-                <div className="h-[30vh] max-w-5xl m-auto bg-[#fff] my-4 rounded-lg  ">
+                <div
+                    className={`h-[30vh] max-w-5xl m-auto ${mode === "dark" ? "bg-[#fff]" : "border border-[#5474b4]"
+                        } my-4 rounded-lg  `}
+                >
                     <ResponsiveCalendar
                         data={calendarData}
                         from="2023-03-01"

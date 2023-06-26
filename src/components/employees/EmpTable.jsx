@@ -3,7 +3,7 @@ import { useTable, usePagination } from "react-table";
 
 import Pagination from "../UI/Pagination";
 
-export const EmpTable = ({ column, title, data }) => {
+export const EmpTable = ({ column, title, data, mode }) => {
 
     const {
         getTableProps,
@@ -52,15 +52,16 @@ export const EmpTable = ({ column, title, data }) => {
                     {page.map((row) => {
                         prepareRow(row);
                         return (
-                            <tr {...row.getRowProps()} key className="even:bg-slate-200 odd:bg-white">
+                            <tr {...row.getRowProps()} key className={`${mode === 'dark' ? 'even:bg-[#1F2A40] odd:bg-[#2c3b57]' : 'even:bg-[#d4dceb] odd:bg-[#E6EFFF]'}`}>
                                 {row.cells.map((cell) => {
                                     return (
                                         <td
                                             {...cell.getCellProps()}
                                             key
-                                            className="border-b text-[#1e3131] border-zinc-300 p-2"
+                                            className={`${mode === 'dark' ? 'text-[#ececec] border-slate-500' : 'text-[#000] border-zinc-300'} border-b   border-zinc-300 p-2`}
                                         >
                                             {cell.render("Cell")}
+                                            {/* text-[#1e3131] */}
                                         </td>
                                     );
                                 })}
@@ -71,7 +72,7 @@ export const EmpTable = ({ column, title, data }) => {
             </table>
             {/* </div> */}
             {pageOptions.length > 2 && (
-                <Pagination prevPage={previousPage} nextPage={nextPage} currentPage={pageIndex + 1} totalPage={pageOptions.length} />
+                <Pagination prevPage={previousPage} nextPage={nextPage} currentPage={pageIndex + 1} totalPage={pageOptions.length} mode={mode} />
                 // <div className="text-center space-x-5 my-5">
                 //     <button
                 //         onClick={() => previousPage()}

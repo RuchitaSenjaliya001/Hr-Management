@@ -6,6 +6,7 @@ export default function Pagination({
     nextPage,
     currentPage,
     totalPage,
+    mode
 }) {
     return (
         <>
@@ -17,7 +18,7 @@ export default function Pagination({
                     title="PREV"
                     className={`px-5 py-2 text-white text-center rounded-md font-bold duration-200 bg-yellow-500 hover:bg-yellow-400 disabled:bg-gray-400 disabled:cursor-not-allowed`}
                 ></Button>
-                <p className="text-white">
+                <p className={`${mode === 'dark' ? 'text-white' : 'text-black'}`}>
                     {currentPage} of {totalPage}
                 </p>
                 <Button

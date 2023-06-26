@@ -218,185 +218,133 @@ const data = [
             }
         ]
     },
-    // {
-    //     "id": "norway",
-    //     "color": "hsl(108, 70%, 50%)",
-    //     "data": [
-    //         {
-    //             "x": "Jan",
-    //             "y": 71
-    //         },
-    //         {
-    //             "x": "Feb",
-    //             "y": 145
-    //         },
-    //         {
-    //             "x": "Mar",
-    //             "y": 187
-    //         },
-    //         {
-    //             "x": "Apr",
-    //             "y": 178
-    //         },
-    //         {
-    //             "x": "May",
-    //             "y": 280
-    //         },
-    //         {
-    //             "x": "Jun",
-    //             "y": 20
-    //         },
-    //         {
-    //             "x": "Jul",
-    //             "y": 163
-    //         },
-    //         {
-    //             "x": "Aug",
-    //             "y": 77
-    //         },
-    //         {
-    //             "x": "Sep",
-    //             "y": 123
-    //         },
-    //         {
-    //             "x": "Oct",
-    //             "y": 27
-    //         },
-    //         {
-    //             "x": "Nav",
-    //             "y": 61
-    //         },
-    //         {
-    //             "x": "Dec",
-    //             "y": 51
-    //         }
-    //     ]
-    // }
+
 ]
 
-const theme =
-{
-    "background": "#1F2A40",
-    "text": {
-        "fontSize": 11,
-        "fill": "#ffffff",
-        "outlineWidth": 0,
-        "outlineColor": "transparent"
-    },
-    "axis": {
-        "domain": {
-            "line": {
-                "stroke": "#777777",
-                "strokeWidth": 1
-            }
-        },
-        "legend": {
-            "text": {
-                "fontSize": 12,
-                "fill": "#ffffff",
-                "outlineWidth": 0,
-                "outlineColor": "transparent"
-            },
-            "effects": [
-                {
-                    "on": 'hover',
-                    "style": {
-                        "itemTextColor": '#000000'
-                    }
-                }
-            ]
-        },
-        "ticks": {
-            "line": {
-                "stroke": "#777777",
-                "strokeWidth": 1
-            },
-            "text": {
-                "fontSize": 11,
-                "fill": "#ffffff",
-                "outlineWidth": 0,
-                "outlineColor": "transparent"
-            }
-        }
-    },
-    "grid": {
-        "line": {
-            "stroke": "#dddddd",
-            "strokeWidth": 1
-        }
-    },
-    "legends": {
-        "title": {
-            "text": {
-                "fontSize": 11,
-                "fill": "#333333",
-                "outlineWidth": 0,
-                "outlineColor": "transparent"
-            }
-        },
+
+
+
+export default function EmpPerformanceChart({ mode }) {
+    const theme =
+    {
+        "background": mode === 'dark' ? "#1F2A40" : '#E6EFFF',
         "text": {
             "fontSize": 11,
-            "fill": "#333333",
+            "fill": "#000000",
             "outlineWidth": 0,
             "outlineColor": "transparent"
         },
-        "ticks": {
-            "line": {},
+        "axis": {
+            "domain": {
+                "line": {
+                    "stroke": "#777777",
+                    "strokeWidth": 1
+                }
+            },
+            "legend": {
+                "text": {
+                    "fontSize": 12,
+                    "fill": mode === 'dark' ? "#ffffff" : '#000000',
+                    "outlineWidth": 0,
+                    "outlineColor": "transparent"
+                },
+                "effects": [
+                    {
+                        "on": 'hover',
+                        "style": {
+                            "itemTextColor": '#000000'
+                        }
+                    }
+                ]
+            },
+            "ticks": {
+                "line": {
+                    "stroke": "#777777",
+                    "strokeWidth": 1
+                },
+                "text": {
+                    "fontSize": 11,
+                    "fill": mode === 'dark' ? "#ffffff" : '#000000',
+                    "outlineWidth": 0,
+                    "outlineColor": "transparent"
+                }
+            }
+        },
+        "grid": {
+            "line": {
+                "stroke": '#99A0AA',
+                "strokeWidth": 1
+            }
+        },
+        "legends": {
+            "title": {
+                "text": {
+                    "fontSize": 11,
+                    "fill": "#333333",
+                    "outlineWidth": 0,
+                    "outlineColor": "transparent"
+                }
+            },
             "text": {
-                "fontSize": 10,
+                "fontSize": 11,
                 "fill": "#333333",
                 "outlineWidth": 0,
                 "outlineColor": "transparent"
+            },
+            "ticks": {
+                "line": {},
+                "text": {
+                    "fontSize": 10,
+                    "fill": "#333333",
+                    "outlineWidth": 0,
+                    "outlineColor": "transparent"
+                }
             }
+        },
+        "annotations": {
+            "text": {
+                "fontSize": 13,
+                "fill": "#333333",
+                "outlineWidth": 2,
+                "outlineColor": "#ffffff",
+                "outlineOpacity": 1
+            },
+            "link": {
+                "stroke": "#000000",
+                "strokeWidth": 1,
+                "outlineWidth": 2,
+                "outlineColor": "#ffffff",
+                "outlineOpacity": 1
+            },
+            "outline": {
+                "stroke": "#000000",
+                "strokeWidth": 2,
+                "outlineWidth": 2,
+                "outlineColor": "#ffffff",
+                "outlineOpacity": 1
+            },
+            "symbol": {
+                "fill": "#000000",
+                "outlineWidth": 2,
+                "outlineColor": "#ffffff",
+                "outlineOpacity": 1
+            }
+        },
+        "tooltip": {
+            "container": {
+                "background": "#ffffff",
+                "fontSize": 12
+            },
+            "basic": {},
+            "chip": {},
+            "table": {},
+            "tableCell": {},
+            "tableCellValue": {}
         }
-    },
-    "annotations": {
-        "text": {
-            "fontSize": 13,
-            "fill": "#333333",
-            "outlineWidth": 2,
-            "outlineColor": "#ffffff",
-            "outlineOpacity": 1
-        },
-        "link": {
-            "stroke": "#000000",
-            "strokeWidth": 1,
-            "outlineWidth": 2,
-            "outlineColor": "#ffffff",
-            "outlineOpacity": 1
-        },
-        "outline": {
-            "stroke": "#000000",
-            "strokeWidth": 2,
-            "outlineWidth": 2,
-            "outlineColor": "#ffffff",
-            "outlineOpacity": 1
-        },
-        "symbol": {
-            "fill": "#000000",
-            "outlineWidth": 2,
-            "outlineColor": "#ffffff",
-            "outlineOpacity": 1
-        }
-    },
-    "tooltip": {
-        "container": {
-            "background": "#ffffff",
-            "fontSize": 12
-        },
-        "basic": {},
-        "chip": {},
-        "table": {},
-        "tableCell": {},
-        "tableCellValue": {}
     }
-}
-
-
-export default function EmpPerformanceChart() {
     return (
-        <div className="h-[45vh] w-full bg-[#1F2A40] text-white rounded-lg m-auto">
-            <h1 className='px-5 text-xl text-white font-semibold pt-1'> Performance</h1>
+        <div className={`h-[45vh] w-full ${mode === 'dark' ? 'bg-[#1F2A40] text-white' : 'bg-[#E6EFFF] text-black'} rounded-lg m-auto`}>
+            <h1 className='px-5 text-xl font-semibold pt-1'> Performance</h1>
             <ResponsiveLine
                 data={data}
                 theme={theme}

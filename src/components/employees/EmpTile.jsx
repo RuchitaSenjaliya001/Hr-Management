@@ -3,7 +3,7 @@ import Pagination from '../UI/Pagination'
 import EmpCard from './EmpCard'
 import data from "../Dummy_data/MOCK_DATA.json";
 
-export default function EmpTile() {
+export default function EmpTile({ mode }) {
     const [currentPage, setCurrentPage] = useState(1)
     const [postPerPage, setPostPerPage] = useState(10)
 
@@ -31,6 +31,7 @@ export default function EmpTile() {
 
                 {currentPost.map((d) => (
                     <EmpCard
+                        mode={mode}
                         key={d.id}
                         id={d.id}
                         name={d.emp_name}
@@ -38,6 +39,7 @@ export default function EmpTile() {
                         mobile={d.mobile}
                         jobTitle={d.job_title}
                         status={d.status}
+                        avatar={d.avatar}
                         hireDate={d.joining_date}
                         department={d.department}
                     />
