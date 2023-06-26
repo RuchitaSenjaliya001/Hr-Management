@@ -1,34 +1,29 @@
 DASHBOARD
 
-![image](https://github.com/RuchitaSenjaliya001/Hr-Management/assets/127396165/b24e6aee-d874-4dfb-a7f6-5ed74938d336)
-![image](https://github.com/RuchitaSenjaliya001/Hr-Management/assets/127396165/dbdaa142-c3bd-4f42-82a6-a9db6436e024)
+![image](https://github.com/RuchitaSenjaliya001/Hr-Management/assets/127396165/de63d004-a54a-4eca-8160-6a4630e46151)
+![image](https://github.com/RuchitaSenjaliya001/Hr-Management/assets/127396165/a8bbaec9-862e-440d-a69a-e758e19df511)
 
 CALENDER
 
-![image](https://github.com/RuchitaSenjaliya001/Hr-Management/assets/127396165/81d36734-3af2-45a0-955b-a2a2f2380b8c)
-![image](https://github.com/RuchitaSenjaliya001/Hr-Management/assets/127396165/c3b09c6f-05b4-4a34-8f79-ba60b9da8f4d)
-
+![image](https://github.com/RuchitaSenjaliya001/Hr-Management/assets/127396165/627e3afb-abae-4e09-8e0f-0dade9239818)
+![image](https://github.com/RuchitaSenjaliya001/Hr-Management/assets/127396165/fcf4a305-b944-4f5c-8b9b-eacd96e81b0a)
 
 EMPLOYEE LIST
 
-![image](https://github.com/RuchitaSenjaliya001/Hr-Management/assets/127396165/d49f07e8-24a9-4675-8bc8-e1c6b06ddc9e)
-![image](https://github.com/RuchitaSenjaliya001/Hr-Management/assets/127396165/f2997846-fcb0-4cf2-83a0-ffc96c22115e)
-
+![image](https://github.com/RuchitaSenjaliya001/Hr-Management/assets/127396165/c0199d99-2fb4-4e0e-9c9c-4f6b13cec438)
+![image](https://github.com/RuchitaSenjaliya001/Hr-Management/assets/127396165/a0739a67-0d45-4f6c-989a-d6571b28b53c)
 
 EMPLOYEE TABLE
 
-![image](https://github.com/RuchitaSenjaliya001/Hr-Management/assets/127396165/356cad53-0705-4c6f-a254-b61a44aa463a)
-![image](https://github.com/RuchitaSenjaliya001/Hr-Management/assets/127396165/bf114d6a-d5d1-4d98-8351-5d373a997259)
-
+![image](https://github.com/RuchitaSenjaliya001/Hr-Management/assets/127396165/00dab06c-0d2c-4d9e-940e-f8c86ecaabb8)
+![image](https://github.com/RuchitaSenjaliya001/Hr-Management/assets/127396165/627d6504-2354-489d-89e8-9624a1ff6716)
 
 EMPLOYEE DETAIL
 
-![image](https://github.com/RuchitaSenjaliya001/Hr-Management/assets/127396165/489b0205-229a-461d-8ad3-d2b901cff010)
-![image](https://github.com/RuchitaSenjaliya001/Hr-Management/assets/127396165/5ab21720-5c83-48fa-90e4-493e2e0469c9)
-
+![image](https://github.com/RuchitaSenjaliya001/Hr-Management/assets/127396165/d5767540-43cd-47c6-8ff5-01beb7fb432d)
+![image](https://github.com/RuchitaSenjaliya001/Hr-Management/assets/127396165/23d57460-7b76-4d83-8ce5-473624d50943)
 
 REPORT 
 
-![image](https://github.com/RuchitaSenjaliya001/Hr-Management/assets/127396165/46db9e14-4cb5-4e1f-9e09-11137738eb5f)
-![image](https://github.com/RuchitaSenjaliya001/Hr-Management/assets/127396165/f28e555f-6d81-4299-940c-1e845ccd1b8a)
-
+![image](https://github.com/RuchitaSenjaliya001/Hr-Management/assets/127396165/ba43392b-da0d-4a83-8e89-a52e37af00ce)
+![image](https://github.com/RuchitaSenjaliya001/Hr-Management/assets/127396165/3a7b324d-dcc7-42d3-b465-7a200284cf64)
