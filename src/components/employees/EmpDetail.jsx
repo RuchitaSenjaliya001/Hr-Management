@@ -23,7 +23,7 @@ export default function EmpDetail({
 
     return (
         <>
-            <div className="w-[60%] m-auto">
+            <div className="w-[60%] h-screen m-auto">
                 <div className="text-center my-3 ">
                     <div className="flex justify-between">
                         <button
