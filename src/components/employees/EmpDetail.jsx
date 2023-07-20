@@ -140,7 +140,7 @@ export default function EmpDetail({
                     </div>
                 </div>
 
-                <div
+                {/* <div
                     className={`h-[30vh] max-w-5xl m-auto ${mode === "dark" ? "bg-[#fff]" : "border border-[#5474b4]"
                         } my-4 rounded-lg  `}
                 >
@@ -170,7 +170,7 @@ export default function EmpDetail({
                             },
                         ]}
                     />
-                </div>
+                </div> */}
             </div>
         </>
     );
