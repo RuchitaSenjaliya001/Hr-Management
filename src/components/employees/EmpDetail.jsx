@@ -1,7 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import { ResponsiveCalendar } from "@nivo/calendar";
-import calendarData from "../Dummy_data/EMP_DAILY_WORK_DATA.json";
 import { useRouter } from "next/router";
 
 export default function EmpDetail({
