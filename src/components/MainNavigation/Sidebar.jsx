@@ -91,13 +91,13 @@ export default function Sidebar() {
                         <AiOutlineApartment className="text-xl" />
                         <Link href="/structure">Structure</Link>
                     </li> */}
-                    <Link
+                    {/* <Link
                         href="/report"
                         className={`flex space-x-3 ${mode === 'dark' ? 'text-[#b2b2b2]' : 'text-[#141B2D]'} items-center`}
                     >
                         <BsFillBarChartFill className="text-xl" />
                         {isMenuOpen && <p>Report</p>}
-                    </Link>
+                    </Link> */}
                     {/* <li className="flex space-x-3 text-[#b2b2b2] items-center">
                         <BsFillBarChartFill className="text-xl" />
                         <Link href="/report">Report</Link>

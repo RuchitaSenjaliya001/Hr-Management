@@ -52,7 +52,7 @@ export const EmpTable = ({ column, title, data, mode }) => {
                     {page.map((row) => {
                         prepareRow(row);
                         return (
-                            <tr {...row.getRowProps()} key className={`${mode === 'dark' ? 'even:bg-[#1F2A40] odd:bg-[#2c3b57]' : 'even:bg-[#d4dceb] odd:bg-[#E6EFFF]'}`}>
+                            <tr {...row.getRowProps()} key className={`${mode === 'dark' ? 'even:bg-[#1F2A40] odd:bg-[#2c3b57]' : 'even:bg-[#e1e2e6] odd:bg-[#E6EFFF]'}`}>
                                 {row.cells.map((cell) => {
                                     return (
                                         <td

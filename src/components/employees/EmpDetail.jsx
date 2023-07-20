@@ -68,34 +68,78 @@ export default function EmpDetail({
                 </div>
                 <div
                     className={`${mode === "dark" ? "bg-[#1F2A40]" : "bg-[#E6EFFF]"
-                        } w-[60%] m-auto rounded-md`}
+                        } m-auto rounded-md my-5 p-5`}
                 >
-                    <div className="flex justify-between space-x-8 px-4 py-4">
-                        <div className="">
-                            <p className="text-md text-[#8a96aa] font-bold">Department</p>
-                            <p className={`text-xl ${mode === 'dark' ? 'text-[#FCFCFC]' : 'text-[#141B2D]'} font-semibold`}>
-                                {department}
+                    {/* <h1 className={`text-white text-center py-3 text-xl font-semibold`}>
+                        Basic Information
+                    </h1> */}
+
+                    <div className="grid grid-cols-2 grid-rows-3 gap-7">
+
+                        <div className="px-4">
+                            <p className="text-md text-[#8a96aa] font-bold">
+                                Candidate ID
+                            </p>
+                            <p
+                                className={`text-lg ${mode === "dark" ? "text-[#FCFCFC]" : "text-[#141B2D]"
+                                    } font-semibold`}
+                            >
+                                {id}
                             </p>
                         </div>
-                        <div className="">
+                        <div className="px-4">
                             <p className="text-md text-[#8a96aa] font-bold">Date Hired</p>
-                            <p className={`text-xl ${mode === 'dark' ? 'text-[#FCFCFC]' : 'text-[#141B2D]'} font-semibold`}>
+                            <p
+                                className={`text-lg ${mode === "dark" ? "text-[#FCFCFC]" : "text-[#141B2D]"
+                                    } font-semibold`}
+                            >
                                 {hireDate}
                             </p>
                         </div>
-                    </div>
-                    <hr className="bg-[#cecece] h-[2px] mx-4" />
-                    <div className="flex justify-between space-x-8 px-4 py-4">
-                        <div className="">
+                        <div className="px-4">
+                            <p className="text-md text-[#8a96aa] font-bold">Department</p>
+                            <p
+                                className={`text-lg ${mode === "dark" ? "text-[#FCFCFC]" : "text-[#141B2D]"
+                                    } font-semibold`}
+                            >
+                                {department}
+                            </p>
+                        </div>
+                        <div className="px-4">
+                            <p className="text-md text-[#8a96aa] font-bold">Job Title</p>
+                            <p
+                                className={`text-lg ${mode === "dark" ? "text-[#FCFCFC]" : "text-[#141B2D]"
+                                    } font-semibold`}
+                            >
+                                {jobTitle}
+                            </p>
+                        </div>
+                        <div className="px-4">
+                            <p className="text-md text-[#8a96aa] font-bold">
+                                Mobile number
+                            </p>
+                            <p
+                                className={`text-lg ${mode === "dark" ? "text-[#FCFCFC]" : "text-[#141B2D]"
+                                    } font-semibold`}
+                            >
+                                {mobile}
+                            </p>
+                        </div>
+
+                        <div className="px-4">
                             <p className="text-md text-[#8a96aa] font-bold">Email</p>
-                            <p className={`text-xl ${mode === 'dark' ? 'text-[#FCFCFC]' : 'text-[#141B2D]'} font-semibold`}>{email}</p>
+                            <p
+                                className={`text-lg ${mode === "dark" ? "text-[#FCFCFC]" : "text-[#141B2D]"
+                                    } font-semibold`}
+                            >
+                                {email}
+                            </p>
                         </div>
-                        <div className="">
-                            <p className="text-md text-[#8a96aa] font-bold">Mobile number</p>
-                            <p className={`text-xl ${mode === 'dark' ? 'text-[#FCFCFC]' : 'text-[#141B2D]'} font-semibold`}>{mobile}</p>
-                        </div>
+
+
                     </div>
                 </div>
+
                 <div
                     className={`h-[30vh] max-w-5xl m-auto ${mode === "dark" ? "bg-[#fff]" : "border border-[#5474b4]"
                         } my-4 rounded-lg  `}

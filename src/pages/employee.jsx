@@ -23,7 +23,7 @@ export default function Employee() {
             <div className={`flex flex-col ${mode === 'dark' ? 'bg-[#141B2D]' : 'bg-[#FCFCFC]'} w-full h-full`}>
                 <div className="flex justify-between my-3">
                     <h1 className={`text-3xl font-bold px-5 py-3 ${mode === 'dark' ? 'text-[#fff]' : 'text-[#000]'}`}>
-                        {data.length} Employees
+                        List of Employees
                     </h1>
                     <div className="flex items-center space-x-4 mr-5 ">
                         <div className="flex bg-gray-300 rounded-md">
